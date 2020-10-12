@@ -1,2 +1,2 @@
-# pm2-deploy-api
-Deploy PM2 Updates
+# edge-nat-deploy
+Used to deploy updates to edge-nat
