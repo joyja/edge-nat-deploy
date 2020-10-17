@@ -19,7 +19,6 @@ const deployUpdate = async function (context) {
     deployUpdateStatus.error = null
 
     backendChild.stdout.on('data', (data) => {
-      console.log(`${data}`)
       deployUpdateStatus.progress += 1
       context.pubsub.publish('deployUpdateStatus', {
         deployUpdateStatus: context.deployUpdateStatus,
